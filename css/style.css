@@ -2325,9 +2325,9 @@ div{
     line-height: 34px;
     margin-bottom: 4px;
 }
-.about-us__recall-comment.element { -ms-overflow-style: none; }
+.about-us__recall-comment { -ms-overflow-style: none; }
 
-.about-us__recall-comment.element { overflow: -moz-scrollbars-none; }
+.about-us__recall-comment{ overflow: -moz-scrollbars-none; }
 .about-us__recall-comment::-webkit-scrollbar { width: 0 !important }
 .about-us__recall-comment {
     font-weight: 600;
@@ -2365,9 +2365,9 @@ div{
     line-height: 22px;
 }
 .about-us__comment-subtitle::-webkit-scrollbar { width: 0 !important }
-.about-us__comment-subtitle.element { -ms-overflow-style: none; }
+.about-us__comment-subtitle { -ms-overflow-style: none; }
 
-.about-us__comment-subtitle.element { overflow: -moz-scrollbars-none; }
+.about-us__comment-subtitle { overflow: -moz-scrollbars-none; }
 .about-us__comment-subtitle {
     font-weight: 400;
     font-size: 12px;
