@@ -59,17 +59,18 @@ if(document.querySelector('.index')){
 
     videoOffer.poster = "./img/desktop-preload.jpg";
     
-    if(window.screen.width <= 992){
+    if(window.screen.width < 992){
         
         videoOffer.src = "./source/mobileAnimation.mp4";
         videoOffer.poster = "./img/mobile-preload.jpg";
     }
 
     window.addEventListener('resize', () => {
-        if(window.screen.width <= 992) {
-            videoOffer.src = "./source/mobileAnimation.mp4";
+        if(window.screen.width < 992) {
             videoOffer.poster = "./img/mobile-preload.jpg";
-        }else if(window.screen.width >= 993) { 
+            videoOffer.src = "./source/mobileAnimation.mp4";
+
+        }else if(window.screen.width > 993) { 
 
             videoOffer.src = "./source/desktop.mp4";
             videoOffer.poster = "./img/desktop-preload.jpg";
