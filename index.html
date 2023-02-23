@@ -46,7 +46,11 @@
 						<img src="img/Mockup.png" alt="">
 					</div>
 					<div class="offer-video-container">
-						<video id="offerVideo" class="offer-video" autoplay="" poster="./img/desktop-preload.jpg" muted="" src="./source/desktop.mp4"></video>
+						<video id="offerVideo" class="offer-video" poster="./img/desktop-preload.jpg" autoplay muted="" tabindex="0">
+							<source  src="./source/desktop.mp4" type="video/mp4"/>
+							<source  src="./source/Audio_spectrum.ogv" type="video/ogv"/>
+							<source type="video/webm"  src="./source/desktop.webm"/>
+						</video>
 					</div>
 				</div>
 			</section>
@@ -321,8 +325,10 @@
 								</div>
 							</div>
 							<img class="our-plus__block-img" src="img/Mockup2.jpg">
-							<video class="our-plus__video-spectrum" autoplay="autoplay" loop="loop" muted="" tabindex="0" >
+							<video class="our-plus__video-spectrum" loop autoplay="" muted="" tabindex="0" >
 								<source  src="./source/Audio_spectrum.mp4" type="video/mp4"/>
+								<source  src="./source/Audio_spectrum.ogv" type="video/ogv"/>
+								<source type="video/webm"  src="./source/Audio_spectrum.webm"/>
 							</video>
 							<div class="our-plus__block-text">
 								<div class="our-plus__piece-of-text">
