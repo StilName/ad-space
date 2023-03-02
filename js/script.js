@@ -14,6 +14,7 @@ if(document.querySelector('.index')){
     const imgOfferMob= document.querySelector('.offer-img-mobile');
     
     const videoOfferMobile = document.querySelector('.offer-video-mobile');
+
     const aboutUs = document.querySelector('.about-us');
     const ourPlus = document.querySelector('.our-plus');
     const ourPlusText = document.querySelectorAll('.our-plus__block-text');
@@ -60,20 +61,12 @@ if(document.querySelector('.index')){
     let indexRelease = 1;
     let index = 1;
 
-    if(window.screen.width < 992) {
-        
-        videoOfferDesk.style.margin = `${(window.screen.height - videoOfferDesk.offsetHeight) * 0.1}px 0 0 0`;  
-
-    }else if(window.screen.width > 993 && window.screen.height > videoOfferDesk.offsetHeight) { 
-        
-        
-        videoOfferDesk.style.margin = `${(window.screen.height - videoOfferDesk.offsetHeight) * 0.5}px 0 0 0`;
-        
-
-
-    }
-    
     window.addEventListener('load', () => {
+        let imgOfferDesk = document.querySelector('.offer-img-desktop');
+        let videoOfferDesk = document.querySelector('.offer-video');
+        let imgOfferMob= document.querySelector('.offer-img-mobile');
+        
+        let videoOfferMobile = document.querySelector('.offer-video-mobile');
 
     if(window.screen.width < 992) {
         videoOfferDesk.style.transform = `translateX${window.screen.height  - videoOfferDesk.offsetHeight / 2}px`;
@@ -90,6 +83,22 @@ if(document.querySelector('.index')){
     }
     
     })
+
+
+    if(window.screen.width < 992) {
+        
+        videoOfferDesk.style.margin = `${(window.screen.height - videoOfferDesk.offsetHeight) * 0.1}px 0 0 0`;  
+
+    }else if(window.screen.width > 993 && window.screen.height > videoOfferDesk.offsetHeight) { 
+        
+        
+        videoOfferDesk.style.margin = `${(window.screen.height - videoOfferDesk.offsetHeight) * 0.5}px 0 0 0`;
+        
+
+
+    }
+    
+
     videoOfferDesk.addEventListener("ended", function (){
         videoOfferDesk.style.display = 'none';
         videoOfferMobile.style.display = 'none';
