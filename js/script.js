@@ -61,7 +61,7 @@ if(document.querySelector('.index')){
     let indexRelease = 1;
     let index = 1;
 
-    window.addEventListener('load', () => {
+    window.addEventListener('onload', () => {
         let imgOfferDesk = document.querySelector('.offer-img-desktop');
         let videoOfferDesk = document.querySelector('.offer-video');
         let imgOfferMob= document.querySelector('.offer-img-mobile');
